@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-Command python, py, node, npx -ErrorAction SilentlyContinue\\).Source; Test-Path \".claude\\\\launch.json\")",
+      "PowerShell($env:PYTHONIOENCODING='utf-8'; python -I \"C:\\\\Users\\\\USUARIO\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-USUARIO-Documents-Supre-pos\\\\aae398b2-e093-4f17-aec5-7052aa544f2f\\\\scratchpad\\\\fix_mojibake.py\" \"app-supre-pos\\\\index.html\" \"app-supre-pos\\\\Codigo.gs\")",
+      "PowerShell($s = \"C:\\\\Users\\\\USUARIO\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-USUARIO-Documents-Supre-pos\\\\aae398b2-e093-4f17-aec5-7052aa544f2f\\\\scratchpad\\\\fix_mojibake.py\"; \\(Get-Content $s -Raw -Encoding utf8\\).Replace\\('print\\(f\"   {a!r} -> {b!r} x{n}\"\\)','print\\(f\"   {ascii\\(a\\)} -> {ascii\\(b\\)} x{n}\"\\)'\\).Replace\\('{dict\\(restantes\\)}','{ascii\\(dict\\(restantes\\)\\)}'\\) | Set-Content $s -Encoding utf8; python -I $s \"app-supre-pos\\\\index.html\" \"app-supre-pos\\\\Codigo.gs\")",
+      "PowerShell(node -e \"const fs=require\\('fs'\\);new Function\\(fs.readFileSync\\('app-supre-pos/Codigo.gs','utf8'\\)\\);console.log\\('sintaxis OK'\\)\")"
+    ]
+  }
+}
